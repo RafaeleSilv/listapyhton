@@ -1,0 +1,48 @@
+# ) Escreva um algoritmo que leia o número de identificação, as 3 notas obtidas por um aluno nas 3 verificações e a média dos exercícios que fazem parte da avaliação, e calcule a média de aproveitamento
+
+ni = int(input('digite o número de identificação do aluno: '))
+n1 = float(input('digite a primeira nota: '))
+n2 = float(input('digite a segunda nota: '))
+n3 = float(input('digite a terceira nota: '))
+me = float(input('digite a média do aluno: '))
+ma = (n1 + n2 * 2 + n3 * 3 + me) / 7
+if ma >= 9 :
+    print('NI:' , ni)
+    print('1° nota: ', n1)
+    print('2° nota: ', n2)
+    print('3° nota: ', n3)
+    print('Média de aproveitamento: ', me)
+    print('Conceito: A')
+    print('Aluno aprovado!')
+elif ma >= 7.5 and ma < 9 :
+    print('NI:' , ni)
+    print('1° nota: ', n1)
+    print('2° nota: ', n2)
+    print('3° nota: ', n3)
+    print('Média de aproveitamento: ', me)
+    print('Conceito: B')
+    print('Aluno aprovado!')
+elif ma >=6 and ma <7.5 :
+    print('NI:' , ni)
+    print('1° nota: ', n1)
+    print('2° nota: ', n2)
+    print('3° nota: ', n3)
+    print('Média de aproveitamento: ', me)
+    print('Conceito: C')
+    print('Aluno aprovado!')
+elif ma >=4 and ma < 6 :
+    print('NI:' , ni)
+    print('1° nota: ', n1)
+    print('2° nota: ', n2)
+    print('3° nota: ', n3)
+    print('Média de aproveitamento: ', me)
+    print('Conceito: D')
+    print('Aluno REPROVADO!')
+else :
+    print('NI:' , ni)
+    print('1° nota: ', n1)
+    print('2° nota: ', n2)
+    print('3° nota: ', n3)
+    print('Média de aproveitamento: ', me)
+    print('Conceito: E')
+    print('Aluno REPROVADO!')
